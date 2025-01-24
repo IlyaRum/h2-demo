@@ -15,8 +15,12 @@ mvn spring-boot:run
 
   ```properties
   spring.datasource.url=jdbc:h2:file:/path/to/your/db/testdb
+  spring.jpa.hibernate.ddl-auto=update
   ```
-
   где `/path/to/your/db/` — путь до директории, в которой будет храниться база данных.
 
+- Пример:
+  ```properties
+  spring.datasource.url=jdbc:h2:file:./testH2db
+  ```
 
